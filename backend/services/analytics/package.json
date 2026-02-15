@@ -1,0 +1,22 @@
+{
+  "name": "@karmdeep/analytics-service",
+  "version": "1.0.0",
+  "description": "Analytics and recommendation service",
+  "main": "dist/index.js",
+  "scripts": {
+    "build": "tsc",
+    "package": "npm run build && zip -r function.zip dist node_modules",
+    "test": "jest"
+  },
+  "dependencies": {
+    "@karmdeep/shared": "file:../../shared",
+    "aws-sdk": "^2.1400.0",
+    "uuid": "^9.0.0"
+  },
+  "devDependencies": {
+    "@types/aws-lambda": "^8.10.119",
+    "@types/node": "^20.0.0",
+    "@types/uuid": "^9.0.2",
+    "typescript": "^5.2.0"
+  }
+}

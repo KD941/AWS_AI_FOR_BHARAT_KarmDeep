@@ -1,0 +1,10 @@
+environment                   = "prod"
+aws_region                    = "us-east-1"
+vpc_cidr                      = "10.0.0.0/16"
+availability_zones            = ["us-east-1a", "us-east-1b", "us-east-1c"]
+enable_nat_gateway            = true
+dynamodb_billing_mode         = "PAY_PER_REQUEST"
+enable_point_in_time_recovery = true
+cognito_mfa_configuration     = "ON"
+api_throttle_burst_limit      = 5000
+api_throttle_rate_limit       = 10000
