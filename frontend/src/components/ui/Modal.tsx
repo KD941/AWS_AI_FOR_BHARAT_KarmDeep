@@ -39,10 +39,7 @@ export function Modal({ isOpen, onClose, title, children, size = 'md' }: ModalPr
         <div className={clsx('relative bg-white rounded-lg shadow-xl w-full', sizeClasses[size])}>
           <div className="flex items-center justify-between p-6 border-b border-gray-200">
             <h3 className="text-lg font-semibold text-gray-900">{title}</h3>
-            <button
-              onClick={onClose}
-              className="text-gray-400 hover:text-gray-600 transition-colors"
-            >
+            <button onClick={onClose}className="text-gray-400 hover:text-gray-600 transition-colors">
               <X className="w-5 h-5" />
             </button>
           </div>
