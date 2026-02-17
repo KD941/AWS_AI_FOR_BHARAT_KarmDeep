@@ -13,7 +13,7 @@ interface AuthState {
 export const useAuthStore = create<AuthState>((set) => ({
   user: null,
   token: localStorage.getItem('authToken'),
-  isAuthenticated: !!localStorage.getItem('authToken'),
+  isAuthenticated: true, // Set to true for testing without backend
   
   login: (token: string, user: User) => {
     localStorage.setItem('authToken', token);
